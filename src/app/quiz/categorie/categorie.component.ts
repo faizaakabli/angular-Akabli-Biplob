@@ -25,8 +25,8 @@ export class CategorieComponent {
 
   }
 
-  addAnswer(answerLabel: string, questionId: number) {
-
+  addAnswer(answer: string, questionId: number) {
+    //this.categorieService.addAnswer(answer, questionId);
   }
 
   isAnswerSelected(answerLabel: string, questionId: number){
