@@ -1,0 +1,76 @@
+.categorie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  text-align: center;
+}
+
+.categorie-form {
+  text-align: center;
+  margin: 20px;
+}
+
+.categorie-form h2 {
+  font-size: 2em; /* Augmentation de la taille du titre /
+  font-weight: bold;
+  margin-bottom: 10px; / Ajout d'une marge en bas /
+}
+
+.categorie-form h4 {
+  font-size: 1.2em; / Augmentation de la taille du sous-titre /
+  margin-top: 10px;
+}
+
+.categorie-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input {
+  / Styles pour l'input de recherche /
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn-icon {
+  / Styles pour le bouton avec icône /
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-icon svg {
+  / Styles pour l'icône dans le bouton /
+  width: 20px;
+  height: 20px;
+}
+
+.app-categorie {
+  / Styles pour le bouton 'app-categorie' /
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.app-categorie[disabled] {
+  / Styles pour le bouton désactivé /
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.answer-container--selected {
+  / Styles pour le bouton sélectionné */
+  background-color: #28a745;
+}

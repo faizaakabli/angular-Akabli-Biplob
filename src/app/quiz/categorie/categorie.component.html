@@ -1,0 +1,35 @@
+<section class="categorie">
+    <form class="categorie_form">
+        <h2>Catégories</h2>
+        <h4>Choisissez une catégorie pour voir le quiz</h4>
+        <div class="categorie_form-container">
+
+            <input type="text" id="name" name="name" placeholder="Rechercher une catégorie" required>
+
+            <button class="btn--icon" (click)="RechercheCateg()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                </svg>
+            </button>
+
+            <section class="categorie">
+                <h2>Catégories</h2>
+                <div class="categorie_form-container">
+                  <div *ngFor="let category of categories" class="categorie-card">
+                    <h4>{{ category.categorie }}</h4>
+                  </div>
+                </div>
+              </section>
+
+            <button class="app-categorie" [disabled]="isQuizFinished"
+                (click)="addAnswer(answer?.answerLabel, questionId)"
+                [class.answer_container--selected]="isAnswerSelected(answer?.answerLabel, questionId)">
+                <span>{{ getAnswerLetter(j) }}.</span> {{ answer?.answerLabel }}
+            </button>
+
+        </div>
+    </form>
+</section>
+
+
